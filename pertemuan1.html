@@ -1,0 +1,135 @@
+<!DOCTYPE html> <!-- Penanda bahwa file ini adalah file HTML 5 -->
+<html lang="id"> <!-- Pengaturan Bahasa (ID = Indonesia) -->
+<head> <!-- Metaddata untuk halaman -->
+    <meta charset="UTF-8"> <!-- Pengaturan Karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif -->
+    <title>Website Sederhana</title> <!-- Judul website yang akan ditampilkan pada tab browser -->
+    <style> /* Internal CSS */
+    /* Mengatur css/gaya pada bagian body */
+    body { 
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f4f4;
+    }
+    /* Mengatur css/gaya pada bagian header */
+    header {
+        background: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    /* Mengatur css/gaya pada bagian navigasi */
+    nav {
+        background: #555;
+        padding: 10px;
+        text-align: center;
+    }
+    /* Mengatur css/gaya pada bagian listnavigasi*/
+    nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    /* Mengatur css/gaya pada bagian navigasi saat mouse diarahkan di atas list navigasi */
+    nav a:hover { 
+        text-decoration: underline;
+    }
+    /* Mengatur css/gaya pada bagian utama */
+    main {
+        padding: 20px;
+    }
+    /* Mengatur css/gaya pada bagian section */ 
+    section {
+        margin-bottom: 20px;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    /* Mengatur css/gaya pada bagian footer */ 
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    /* Mengatur css/gaya pada bagian button */
+    button {
+        padding: 10px 15px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head> <!-- Penutup tag head -->
+<body> <!-- Tempat konten atau isi halaman -->
+
+<!-- Header untuk menampilkan judul pada tampilan awal halaman -->
+<header>
+    <h1>Website Satu File</h1>
+    <p>HTML + CSS + JavaScript dalam satu file</p>
+</header>
+
+<!-- Navigasi untuk menu home, about, dan contact pada tampilan awal halaman -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Konten utama (Home) untuk menampilkan konten halaman utama -->
+<main>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Ini adalah halaman utama website sederhana.</p>
+        <button onclick="tampilkanPesan()">Klik Saya</button>
+    </section>
+
+<!-- Konten About untuk menampilkan informasi tentang website-->
+    <section id="about">
+        <h2>About</h2>
+        <p>Website ini dibuat dalam satu file menggunakan HTML, CSS, dan JavaScript.</p>
+    </section>
+
+<!-- Konten Contact untuk menampilkan formulir kontak -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form onsubmit="kirimForm(event)">
+        <label>Nama:</label><br>
+        <input type="text" id="nama" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" required><br><br>
+
+        <button type="submit">Kirim</button>
+        </form>
+    </section>
+</main>
+
+<!-- Footer untuk menampilakan informasi hak cipta-->
+<footer>
+    <p>&copy; 2026 Website Sederhana</p>
+</footer>
+
+<!-- Script Javascript untuk menjalankan fungsi interaktif pada website -->
+<script>
+    // Fungsi untuk menampilkan pesan saat tombol diklik
+    function tampilkanPesan() {
+        alert("Halo! Ini JavaScript dalam satu file.");
+    }
+
+    // Fungsi untuk menangani pengiriman form
+    function kirimForm(event) {
+        event.preventDefault();
+        const nama = document.getElementById("nama").value;
+        alert("Terima kasih, " + nama + "! Pesan Anda terkirim.");
+    }
+</script> <!-- Penutup script javascript -->
+
+</body> <!-- Penutup tag body -->
+</html> <!-- Penutup tag html -->
