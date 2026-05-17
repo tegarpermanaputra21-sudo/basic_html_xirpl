@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Pak Hidayat</title>
+    <style>
+        /* Import Font dari Googlefonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        /* Gaya untuk Semua Konten dan Bagian Body */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Container Utama (card-section/halaman) */
+        .card {
+            display: flex;
+            flex-direction: column-reverse; /* Default untuk mobile: foto berada di bagian atas sedangkan teks berada di bagian bawah */
+            max-width: 850px;
+            background-color: white;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            gap: 40px;
+        }
+
+        /* Gaya untuk Bagian Kiri (Konten Utama) */
+        .left-side {
+            flex: 1;
+        }
+        .left-side h1 {
+            font-size: 2.5rem;
+            color: #1a252f;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #000000;
+            padding-bottom: 10px;
+        }
+        .left-side h2 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Blok Data Mandiri */
+        .data-section {
+            margin-bottom: 35px;
+        }
+
+        /* Gaya untuk Bagian Info Personal */
+        .data1 p {
+            margin: 8px 0;
+            font-size: 1rem;
+        }
+        .data1 p span {
+            font-weight: 600;
+            color: #555;
+            display: inline-block;
+            width: 90px;
+        }
+
+        /* Gaya untuk Bagian List (Pendidikan & Pengalaman) */
+        .left-side ul {
+            list-style: none; 
+        }
+        .left-side ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        /* Membuat bullet point custom baru yang lebih rapi */
+        .left-side ul li::before {
+            content: "•";
+            color: #3eaaf7;
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        /* Gaya Khusus untuk Bagian Skills */
+        .data4 ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-left: 0;
+        }
+        .data4 ul li {
+            padding: 6px 14px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border-radius: 20px;
+        }
+        .bg-blue { background-color: #e8f0fe; color: #1a73e8; }
+        .bg-red { background-color: #fce8e6; color: #d93025; }
+        .bg-yellow { background-color: #ffeec2; color: #b06000; }
+        .bg-green { background-color: #e6f4ea; color: #137333; }
+        .data4 ul li::before {
+            content: none; 
+        }
+
+        /* Gaya untuk Bagian Kanan (Foto Profil) */
+        .right-side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #000000;
+        }
+
+        /* --- Media Queries/Responsive untuk Layar Desktop (Minimal 768px) --- */
+        @media (min-width: 768px) {
+            body {
+                padding: 40px;
+            }
+            .card {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .right-side {
+                top: 40px;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="left-side">
+            <h1>Muhammad Hidayatullah, S.Kom</h1>
+            
+            <div class="data-section data1">
+                <h2>Personal</h2>
+                <p><span>Position</span>: Teacher</p>
+                <p><span>Phone</span>: +62 858 9301 5652</p>
+                <p><span>Email</span>: muhammadhidayatullah1234@gmail.com</p>
+            </div>
+
+            <div class="data-section data2">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Universitas Pamulang</strong> (IPK = 3,17 | 2013 – 2017)</li>
+                    <li><strong>SMK Muhammadiyah 3 Tangerang Selatan</strong> (2010 – 2013)</li>
+                    <li><strong>SMP Muhammadiyah 44 Pamulang</strong> (2007 – 2010)</li>
+                    <li><strong>SD Negeri Pamulang Indah</strong> (2001 – 2007)</li>
+                </ul>
+            </div>
+
+            <div class="data-section data3">
+                <h2>Experiences</h2>
+                <ul>
+                    <li><strong>Teacher & IT Administrator</strong> at SMK Muhammadiyah 3 Tangerang Selatan (2018 – Present)</li>
+                    <li><strong>Teacher & IT Support</strong> at SMP Muhammadiyah 29 Sawangan (2018 – Present)</li>
+                    <li><strong>Programmer</strong> at PT. Presindo Central (2017 – 2018)</li>
+                    <li><strong>IT Support</strong> at SMP Muhammadiyah 29 Sawangan (2016 – 2017)</li>
+                    <li><strong>IT Support</strong> at PT. Trans Fashion Indonesia (2013 – 2016)</li>
+                </ul>
+            </div>
+
+            <div class="data-section data4">
+                <h2>Skills</h2>
+                    <ul>
+                        <li class="bg-blue">Microsoft Office</li>
+                        <li class="bg-red">Debian Server</li>
+                        <li class="bg-yellow">Mikrotik</li>
+                        <li class="bg-green">Web Programming (HTML5, JS, PHP)</li>
+                        <li class="bg-blue">MySQL</li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <img src="http://dayathiday.my.id/wp-content/uploads/2024/12/Desain-tanpa-judul-6.png" alt="profile picture">
+        </div>
+    </div>
+
+</body>
+</html>
