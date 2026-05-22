@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Berita Ngawi Selatan</title>
+    <style>
+        /* untuk mengatur semua elemen */
+        * { 
+            box-sizing: border-box;
+        }
+        /* untuk mengatur body */
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        }
+        /* untuk mengatur header */
+        header {
+            background: #333; 
+            color: #fff; 
+            padding: 1rem; 
+            text-align: center; 
+        }
+        /* untuk mengatur navigasi */
+        nav { 
+            background: #444; 
+            padding: 0.5rem; 
+            text-align: center; 
+        }
+        /* untuk mengatur tautan dalam navigasi */
+        nav a { 
+            color: #fff; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        nav a:hover { 
+            text-decoration: underline; 
+        }
+        /* untuk mengatur bagian utama konten */
+        main { 
+            display: flex; 
+            flex-wrap: wrap; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: auto; 
+            gap: 20px; 
+        }
+        
+        section { 
+            flex: 3; 
+            min-width: 300px; 
+        }
+        /* untuk mengatur bagian sidebar/menu samping */
+        aside { 
+            flex: 1; 
+            min-width: 250px; 
+            background: #ddd; 
+            padding: 15px; 
+            height: fit-content; 
+        }
+        /* untuk mengatur bagian artikel/berita (card) */
+        article { 
+            background: #fff; 
+            padding: 20px;
+            margin-bottom: 20px; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        /* untuk mengatur judul dalam artikel */
+        article h3 { 
+            margin-top: 0; 
+            color: #333; 
+        }
+        article img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        /* untuk mengatur metadata berita */
+        .meta-berita { 
+            font-size: 0.85rem; 
+            color: #777; 
+            margin-bottom: 10px; 
+        }
+        /* untuk mengatur */
+        footer { 
+            background: #333; 
+            color: #fff; 
+            text-align: center; 
+            padding: 1rem; 
+            position: relative; 
+            bottom: 0; 
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Bagian Header/Judul -->
+    <header>
+        <h1>Portal Berita Ngawi Selatan</h1>
+        <p>Aktual, Tajam, dan Terpercaya</p>
+    </header>
+
+    <!-- Bagian Navigasi/Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#nasional">Nasional</a>
+        <a href="#teknologi">Teknologi</a>
+        <a href="#olahraga">Olahraga</a>
+        <a href="#hiburan">Hiburan</a>
+    </nav>
+
+    <!-- Bagian Utama Konten/Isi -->
+    <main>
+        <!-- Container/Tempat Penampungan Konten -->
+        <section id="berita-terbaru">
+            <h2>Berita Terkini</h2>
+            <!-- Artikel Berita ke-1 (card1) -->
+            <article>
+                <h3>Teknologi AI Semakin Membantu Produktivitas Kerja</h3>
+                <img src="/Pertemuan 5/girl1.jpg" alt="img1">
+                <div class="meta-berita">Dipublikasikan pada: 20 Mei 2026 | Oleh: Budi Santoso</div>
+                <p>Perkembangan kecerdasan buatan (AI) di tahun 2026 ini semakin terintegrasi dengan dunia kerja. Banyak perusahaan mulai memanfaatkan AI untuk efisiensi data dan otomatisasi tugas harian...</p>
+                <a href="#selengkapnya1">Baca Selengkapnya</a>
+            </article>
+            
+            <!-- Artikel Berita ke-2 (card2) -->
+            <article>
+                <h3>Timnas Garuda Bersiap Hadapi Laga Kualifikasi Besok Malam</h3>
+                <img src="/Pertemuan 5/girl2.jpg" alt="img2">
+                <div class="meta-berita">Dipublikasikan pada: 20 Mei 2026 | Oleh: Siti Rahma</div>
+                <p>Pelatih optimis anak asuhnya mampu mengamankan poin penuh di kandang sendiri. Strategi khusus telah disiapkan untuk meredam serangan cepat dari tim lawan...</p>
+                <a href="#selengkapnya2">Baca Selengkapnya</a>
+            </article>
+        </section>
+
+        <!-- Bagian Sidebar/Menu Samping -->
+        <aside>
+            <h3>Berita Populer</h3>
+            <ul>
+                <li><a href="#">Tips Menjaga Kesehatan di Musim Pancaroba</a></li>
+                <li><a href="#">Rekomendasi Wisata Alam Akhir Pekan</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Bagian Footer/Kaki -->
+    <footer>
+        <p>&copy; 2026 Portal Berita Ngawi Selatan. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
