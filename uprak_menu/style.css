@@ -373,11 +373,6 @@ main {
     font-size: 18px;
 }
 
-/* HP */
-@media (max-width: 768px) {
-
-}
-
 /* Tablet */
 @media (max-width: 1024px) {
     /* container 1 */
@@ -418,6 +413,8 @@ main {
     .menu-card img{
         width: 100%;
         height: 180px;
+        object-fit: cover;
+        object-position: center;
     }
 
     .cto-card{
@@ -459,3 +456,17 @@ main {
         padding: 80px;
     }
 }
+
+
+    /* HP */
+    @media (max-width: 768px) {
+        /* container 2 */
+        .icon-box .icon i {
+            flex-wrap: wrap;
+            font-size: 28px;
+        }
+        /* container 3 */
+        .menu-card{
+            width: 80%;
+        }
+    }
