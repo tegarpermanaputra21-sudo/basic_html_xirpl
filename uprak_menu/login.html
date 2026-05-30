@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        * { 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        body { 
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+            color: #334e68; 
+        }
+        .login-card { 
+            background: #ffffff; 
+            width: 100%; 
+            max-width: 400px; 
+            padding: 40px 35px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 25px rgba(180, 195, 210, 0.4); 
+            border: 1px solid #e2e8f0; 
+        }
+        .login-header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+        }
+        .login-header h1 { 
+            font-size: 30px;
+            color: #685e52; 
+            font-weight: 700; 
+            margin-bottom: 8px;
+        }
+        .login-header p { 
+            font-size: 14px; 
+            color: #685e52; 
+        }
+        .form-group { 
+            margin-bottom: 22px; 
+        }
+        .form-group label { 
+            display: block; 
+            font-size: 13px; 
+            color: #685e52; 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+        }
+        .form-control { 
+            width: 100%; 
+            padding: 12px 16px; 
+            background: #f8fafc; 
+            border: 1px solid #d9e2ec; 
+            color: #685e52; 
+            font-size: 14px; 
+            border-radius: 8px; 
+            transition: all 0.2s ease; 
+            outline: none; 
+        }
+        .form-control:focus { 
+            background: #ffffff; 
+            border-color: #685e52; 
+            box-shadow: 0 0 0 3px rgba(159, 179, 200, 0.2); 
+        }
+        .btn-submit { 
+            display: inline-flex;
+            justify-content: center;
+            width: 100%; 
+            padding: 14px; 
+            background: #685e52;
+            color: white; 
+            border: none; 
+            font-size: 15px; 
+            font-weight: 600; 
+            border-radius: 8px; 
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.2s ease; 
+        }
+        .btn-submit:hover { 
+            background: #3b332a;
+        }
+        .register-link {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="login-header">
+            <h1>Login</h1>
+            <p>Silahkan masuk ke halaman menu</p>
+        </div>
+        <form>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="txt_usr" class="form-control" placeholder="Masukkan username" required />
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="txt_pass" class="form-control" placeholder="Masukkan password" required />
+            </div>
+            <a href="index.html" class="btn-submit">Login</a>
+            <div class="register-link">
+                <p>Belum Punya Akun? <a href="regis.html">Daftar sekarang!</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

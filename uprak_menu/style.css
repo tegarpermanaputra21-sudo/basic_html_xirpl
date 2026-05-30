@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* container 1 (navbar & hero section) */
+/* navbar */
+.container1 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("diligent-barista-is-prepairing-fresh-latte-customers-coffee-break-caffeteria.jpg");
+    background-size: cover;
+    background-position: center-right;
+    
+}
+nav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+nav .nav-link {
+    display: flex;
+    gap: 20px;
+}
+nav a{
+    color: rgba(255, 255, 255, 0.804);
+    text-decoration: none;
+    transition: 0.1s;
+}
+nav a:hover{
+    color: white;
+}
+nav i {
+    margin-top: 10px;
+    font-size: 18px;
+}
+nav .title{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* main content or hero section */
+main {
+    color: white;
+    padding: 20px;
+    height: 400px;
+}
+.main-content {
+    margin: 6rem 10rem;
+    width: 400px;
+}
+.main-content h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.main-content h2{
+    font-size: 34px;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.main-content button{
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    border: 1.5px solid white;
+    padding: 11px  22px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.main-content button:hover {
+    border: 1.5px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+
+/* container2 (icon-row) */
+.container2 {
+    padding: 40px 0;
+    background-color: #e2d9c8;
+}
+.icon-box{
+    display: flex;
+    gap: 9rem;
+    justify-content: center;
+    text-align: center;
+}
+.icon{
+    color: #685e52;
+}
+.icon i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.icon p{
+    font-size: 14px;
+}
+
+
+/* container 3 (drinks menu) */
+.container3{
+    color: #332f27;
+    padding: 60px 0;
+}
+.container3 h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.slider-menu1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.menu-card{
+    background-color: #ede9e6;
+    width: 220px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.menu-card img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+}
+.menu-card h3{
+    font-weight: 600;
+}
+.menu-card p{
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.cto-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cto-card span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.cto-card button{
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    background-color: #31281f;
+    padding: 6px 10px;
+    border: 1.5px solid #31281f;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cto-card button:hover{
+    background-color: transparent;
+    color: #31281f;
+    border: 1.5px solid#31281f;
+}
+
+
+/* container 4 (dessert menu) */
+.container4{
+    padding: 20px 0 80px;
+}
+.container4 h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+/* container 5 (checkout section) */
+.container5{
+    padding: 80px 0;
+    display: flex;
+    justify-content: right;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/uprak_menu/menu_img/cloth-bag-with-coffee-beans.jpg);
+    background-size: cover;
+    object-position: left;
+}
+.desc-checkout{
+    color: white;
+    width: 400px;
+    margin-right: 10rem;
+}
+.desc-checkout h2{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+.desc-checkout button{
+    width: 180px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    border: 1.5px solid white;
+    padding: 10px 22px;
+    border-radius: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.desc-checkout button:hover{
+    color: #31281f;
+    background-color: white;
+}
+
+/* container 6 (costumer reviews) */
+.container6{
+    color: #332f27;
+    padding: 40px 0 60px;
+}
+.container6 h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container6 h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container6 .slider-comment{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.container6 .card{
+    background-color: #eeebe6;
+    width: 400px;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.container6 .card .profile{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.container6 .card .profile .info{
+    display: flex;
+    gap: 10px;
+}
+.container6 .card .profile .info .img-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container6 .card .profile .info .img-desc h4{
+    font-size: 13px;
+}
+.container6 .card .profile .info .img-desc p{
+    font-size: 11px;
+}
+.container6 .card .profile img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.container6 .card .profile .rate{
+    margin-top: 10px;
+}
+
+.container6 .card .desc{
+    font-size: 14px;
+}
+
+
+/* container 7 (discount with login) */
+.container7{
+    padding: 60px 0;
+    background-color: #e2d9c8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container7 h2{
+    font-size: 22px;
+}
+.container7 p{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.container7 .login-form{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.container7 .login-form input{
+    font-size: 14px;
+    padding: 8px 20px;
+    width: 280px;
+    border-radius: 20px;
+    border: none;
+}
+.container7 .login-form button{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    border: 1.5px solid #31281f;
+    background-color: #31281f;
+    padding: 8px  30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.container7 .login-form button:hover{
+    color: #31281f;
+    border: 1.5px solid #31281f;
+    background-color: transparent;
+}
+
+
+/* container 8 (footer) */
+.container8{
+    padding: 80px 0 60px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #30261c;
+}
+.container8 .privacy, .services, .about-us, .information {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.container8 h2{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 17px;
+    font-weight: 500;
+}
+.container8 a{
+    color: rgba(255, 255, 255, 0.475);
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.container8 a:hover{
+    color: white;
+}
+
+.container8 .logo a{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+.container8 .social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.container8 .social-media .icon{
+    display: flex;
+    gap: 20px;
+}
+
+
+.container8 .social-media i{
+    font-size: 18px;
+}
+
+/* HP */
+@media (max-width: 768px) {
+
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    /* container 1 */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px ;
+    }
+    nav .nav-link {
+        display: none;
+    }
+
+    .main-content {
+    width: 90%;
+    margin: 6rem auto;
+    } 
+
+
+    /* container 2  */
+        .icon-box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    /* container 3 */
+    .slider-menu1, .slider-menu2{
+        width: 100%;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .menu-card{
+        width: 45%;
+    }
+    .menu-card img{
+        width: 100%;
+        height: 180px;
+    }
+
+    .cto-card{
+        align-items: start;
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    /* container 6 */
+    .container6 .card{
+        width: 90%;
+    }
+
+
+    /* container 5 */
+    .container5{
+        display: flex;
+        justify-content: center;
+    }
+    .desc-checkout{
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+    /* container 7 (discount with login) */
+    .container7 .desc {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+
+
+    /* container 8 (footer) */
+    .container8{
+        gap: 30px;
+        flex-direction: column;
+        padding: 80px;
+    }
+}
